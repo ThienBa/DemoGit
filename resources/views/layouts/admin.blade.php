@@ -169,7 +169,7 @@
     <script src="{{url('public/js/upload_images.js')}}"></script>
     <script>
         var editor_config = {
-            path_absolute: "http://localhost:8080/IsMart/",
+            path_absolute: "/IsMart/",
             selector: 'textarea',
             relative_urls: false,
             height: 500,

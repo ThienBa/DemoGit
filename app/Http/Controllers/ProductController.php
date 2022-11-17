@@ -137,16 +137,16 @@ class ProductController extends Controller
                     $item_price = number_format($item->price, 0, '', '.').'đ';
                     $slug = Str::slug($item->name);
                     $output .= "<li>";
-                    $output .= "<a href='http://localhost:8080/IsMart/san-pham/{$item->id}-{$slug}' title='' class='thumb'>
-                                    <img src='http://localhost:8080/IsMart/public/{$item->thumbnail}'>
+                    $output .= "<a href='/IsMart/san-pham/{$item->id}-{$slug}' title='' class='thumb'>
+                                    <img src='/IsMart/public/{$item->thumbnail}'>
                                 </a>
-                                <a href='http://localhost:8080/IsMart/san-pham/{$item->id}-{$slug}' title='' class='product-name'>{$item->name}</a>
+                                <a href='/IsMart/san-pham/{$item->id}-{$slug}' title='' class='product-name'>{$item->name}</a>
                                 <div class='price'>
                                     <span class='new'>{$item_price}</span>
                                 </div>
                                 <div class='action clearfix'>
-                                    <a href='http://localhost:8080/IsMart/them-gio-hang/{$item->id}-{$slug}' title='' class='add-cart fl-left'>Thêm giỏ hàng</a>
-                                    <a href='http://localhost:8080/IsMart/mua-ngay/{$item->id}-{$slug}' title='' class='buy-now fl-right'>Mua ngay</a>
+                                    <a href='/IsMart/them-gio-hang/{$item->id}-{$slug}' title='' class='add-cart fl-left'>Thêm giỏ hàng</a>
+                                    <a href='/IsMart/mua-ngay/{$item->id}-{$slug}' title='' class='buy-now fl-right'>Mua ngay</a>
                                 </div>";
                     $output .= "</li>"; 
                 }
